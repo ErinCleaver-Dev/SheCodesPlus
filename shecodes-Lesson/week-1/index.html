@@ -5,18 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: PT Mono, monospace;
+        }
+
+        body {
+            width: 100%;
+        }
+
+
+        h1, h3, p {
+            text-align: center;
+        }
+
+        .title {
+            padding-top: 100px;
+            font-size: 2.4em;
+        }
+
+        .subtitle {
+            color: #8064e9;
+            font-size: 2.4em;
+            padding-bottom: 30px;
+        }
+
+        .description {
+            font-size: 1.5em;
+        }
+
+        .join_now {
+            background-color: #8064e9;
+            border: none;
+            border-radius: 25px;
+            padding: 18px 25px;
+            color: white;
+            margin: 40px auto !important;
+            display: block;
+            font-size: 1.2em;
+        }
+
+        .join_now:hover {
+            background: #423a5e;
+            transition: all 200ms ease;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>👩‍💻 SheCodes is Coding Workshop for Women</h1>
-    <h3>Access a new career in Technology</h3>
-    <p>
+    <h1 class="title">👩‍💻 SheCodes is Coding Workshop for Women</h1>
+    <h3 class="subtitle">Access a new career in Technology</h3>
+    <p class="description">
         SheCodes teaches coding, design and maagement skills to women
         <br/>
-        Only 25 spots available
+        <strong>Limited number of stops available</strong>
     </p>
 
-    <a href="">Apply Now</a>
-    <!-- Do not know where to get that speific icon or what it is called.  So used the basic icon form the html  -->
-    <p style="color: yellow">★</p>
+    <button type="submit" class="join_now"> 
+        Join now
+    </button>
 </body>
 </html>
