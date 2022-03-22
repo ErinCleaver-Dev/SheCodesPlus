@@ -1,15 +1,15 @@
-let price = 4.5;
-let values = [4, 1, 3, 10]
+// import Axios
+//JS Challenge 2
+//Given the API https://jsonplaceholder.typicode.com/, get the comments (/comments) and log the API response
 
-
-let rounded = Math.round(price);
-console.log(`Rounded: ${rounded}`);
-let ceil = Math.ceil(price);
-console.log(`Ceil: ${ceil}`)
-let floor = Math.floor(price);
-console.log(`Floor: ${floor}`)
-
-let min = Math.min(...values)
-console.log(`Min: ${min}`)
-let max = Math.max(...values)
-console.log(`Max: ${max}`)
+const getComments = async () => {
+    await axios
+      .get("https://jsonplaceholder.typicode.com/comments")
+      .then((response) => {
+        console.log(response);
+      });
+  };
+  
+  //JS Challenge 3
+  //Log the first comment email from the API respons
+  
